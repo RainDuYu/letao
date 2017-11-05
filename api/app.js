@@ -28,9 +28,11 @@ app.use(session({
   resave: false,
   saveUninitialized: true,
 }));
-
+//不分是get还是post，任何请求都会经过
 app.all('*', function(req,res,next){
-  res.header('Access-Control-Allow-Origin','*');
+  //设置请求头,解决跨域问题
+  // res.header('Access-Control-Allow-Origin','*');
+  res.header('Access-Control-Allow-Origin','http://letao.com');
   next();
 });
 
