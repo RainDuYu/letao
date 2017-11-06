@@ -1,3 +1,4 @@
+
 define(['jquery'],function($){
     //提交表单
     $('form').on('submit', function () {

@@ -1,4 +1,4 @@
-//返回值$
-define(['jquery', './utils'],function($){
+//返回值$,引入jquery获得$
+define(['jquery', './utils'], function($){
 
 })
