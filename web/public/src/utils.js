@@ -20,4 +20,8 @@ define(['jquery'],function($){
             }
         })
     })
+    // 选择器'+'紧邻的下一个元素
+    $('.navs a + ul').prev().on('click',function(){
+        $(this).next().slideToggle();
+    })
 })
